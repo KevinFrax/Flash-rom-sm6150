@@ -21,3 +21,15 @@ Guide for the rom :
 Note:
 
 13.You can use an sdcard or otg to install, just select the rom in the recovery and it will install itself. 
+
+2
+
+Guide for rom ( change rom if you are already on one)
+----------------------------------------
+1. Reboot into recovery aosp
+2. Format data and cache 
+3. Reboot recovery 
+4. Now on the phone select  Apply Update  > Apply from ADB
+5. On the computer put the following command: adb sideload romfilename.zip ( replace romfilename.zip with your rom name )
+6. Reboot system 
+7. enjoy 
