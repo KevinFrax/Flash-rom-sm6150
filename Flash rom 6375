@@ -10,7 +10,7 @@ Guide for the rom :
 5. Type adb reboot bootloader
 6. Check your phone connected and triggered in fastboot mode or not using ( type fastboot devices)
 7. Download the recovery of my roms (in the post)
-8. Now flash the files with the following commands:(fastboot set_active b) (fastboot flash boot boot boot.img)( fastboot flash vendor_boot vendor_boot vendor_boot.img ) or aosp recovery installer will do these things for you containing all the files in it, just run the .bat file while being in bootloader 
+8. Now flash the files with the following commands:(fastboot set_active b) (fastboot flash boot boot boot.img)( fastboot flash vendor_boot vendor_boot.img ) or aosp recovery installer will do these things for you containing all the files in it, just run the .bat file while being in bootloader 
 
 9. now ( fastboot reboot recovery )
 10. now on the phone select  Apply Update  > Apply from ADB
