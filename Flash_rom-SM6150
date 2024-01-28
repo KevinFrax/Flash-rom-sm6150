@@ -1,0 +1,19 @@
+Installation guide for Moto G60 & G40 fusion
+============================================
+
+Guide for the rom :
+----------------------------------------
+1. connect phone to computer
+2. enable developer options & usb debugging
+3. Open command prompt in platform tools latest. ( Don't use minimal adb tools )
+4. Type adb devices
+5. Type adb reboot bootloader
+6. Check your phone connected and triggered in fastboot mode or not using ( type fastboot devices )
+7. Download TWRP to flash my builds
+8. type fastboot -w
+9. type fastboot erase userdata
+10. type fastboot boot twrp-name.img
+11. push ROM.zip to the sdcard or otg can also be through your computer (adb sideload)
+12. flash ROM.zip ( by default skip digest check will be enabled so don't untick & don't tick anything extra )
+13. swipe to flash
+14. reboot system
