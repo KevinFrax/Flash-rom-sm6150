@@ -1,0 +1,23 @@
+Download the rom zip and boot.img vendor_boot.img dtbo.img and super_empty.img
+reboot the device to bootloader mode
+
+it can be done by shutting down phone and press vol - and power button at once
+or from turned on device do adb reboot bootloader
+
+now do these commands from the place the images are on the pc open terminal/command prompt there
+
+fastboot flash --slot=all boot boot.img
+
+fastboot flash --slot=all dtbo dtbo.img
+
+fastboot flash --slot=all vendor_boot vendor_boot.img
+
+fastboot wipe-super super_empty.img
+
+and reboot recovery ( u can do it from the bootloader mode it self by pressing vol buttons until recovery is shown and to select it press power button)
+or do fastboot reboot recovery
+
+now on the phone select  Apply Update  > Apply from ADB
+and on pc run this
+
+adb sideload nameoftherom.zip
