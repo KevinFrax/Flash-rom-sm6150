@@ -8,15 +8,17 @@ Guide for the rom which has Google apps:
 3. Open command prompt in platform tools latest. ( Don't use minimal adb tools )
 4. Type adb devices
 5. Type adb reboot bootloader
+-. fastboot -w
+-.fastboot set_active b
+-.fastboot reboot bootloader
 6. Check your phone connected and triggered in fastboot mode or not using ( type fastboot devices )
 7. Download TWRP to flash my builds
-8. type fastboot -w
-9. type fastboot erase userdata
-10. type fastboot boot twrp-name.img
-11. push ROM.zip to internal storage via using command prompt by typing (adb push ROM.zip /sdcard) or copy paste to internal storage if it is accessible from file explorer on your computer.
-12. flash ROM.zip ( by default skip digest check will be enabled so don't untick & don't tick anything extra )
-13. swipe to flash
-14. reboot system
+8. type fastboot erase userdata
+9. type fastboot boot twrp-name.img
+10. push ROM.zip to internal storage via using command prompt by typing (adb push ROM.zip /sdcard) or copy paste to internal storage if it is accessible from file explorer on your computer.
+11. flash ROM.zip ( by default skip digest check will be enabled so don't untick & don't tick anything extra )
+12. swipe to flash
+13. reboot system
 
 Guide for the rom which has no Google apps:
 -------------------------------------------
@@ -28,6 +30,8 @@ Guide for the rom which has no Google apps:
 6. Check your phone connected and triggered in fastboot mode or not using ( type fastboot devices )
 7. Download TWRP to flash my builds
 8. type fastboot -w
+-. fastboot set_active b
+-. fastboot reboot bootloader
 9. type fastboot erase userdata
 10. type fastboot boot twrp-name.img
 11. push ROM.zip to internal storage via using command prompt by typing (adb push ROM.zip /sdcard) or copy paste to internal storage if it is accessible from file explorer on your computer.
